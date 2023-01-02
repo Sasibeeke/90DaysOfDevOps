@@ -1,3 +1,5 @@
+ #90DaysOfDevOps 
+
 Devops is methodology by using this we can automate the complete software devlopment lifecycle.
 It will remove the communication gap betweeen devloper and operation team.
 we use different tools like for versioning we use git & github.
@@ -9,4 +11,6 @@ jenkins is heart of devops.
 we also use docker for containerization of our application.
 we use k8s because of scaling,autohealing of pods or for microservices we use k8s.
 terraform is used to achieve complete automation.
+
+
 
