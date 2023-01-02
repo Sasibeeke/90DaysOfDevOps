@@ -1,2 +1,12 @@
-DevOps is a methodology which Involves practices to bridge the gap of Dev and ops team by using Open source automation build tools.
-These are the articles which I refered to,
+Devops is methodology by using this we can automate the complete software devlopment lifecycle.
+It will remove the communication gap betweeen devloper and operation team.
+we use different tools like for versioning we use git & github.
+we use linux bacause lots of application servers are in linux.
+i use aws as a cloud service.we can use azure,gcp,alibaba....
+for server congifuration management we use ansible.
+to create pipelines we use jenkins.
+jenkins is heart of devops.
+we also use docker for containerization of our application.
+we use k8s because of scaling,autohealing of pods or for microservices we use k8s.
+terraform is used to achieve complete automation.
+
