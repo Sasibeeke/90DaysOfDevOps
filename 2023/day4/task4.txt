@@ -1,0 +1,33 @@
+#90DaysOfDevOps
+
+1) Explain in your own words and examples, what is Shell Scripting for DevOps.
+Ans => A shell script is a computer program designed to be run by the Unix shell, a command-line interpreter.if we have repeated task then we can also write shell script for it.
+shell script has the file extension .sh
+e.g if i want to run specific commands which daily runs like i want backup of database then i will write script for it instead of doing manually everyday.
+
+2) What is #!/bin/bash? can we write #!/bin/sh as well?
+Ans => #!/bin/bash? this is called as shebang or a "bang". it is nothing but the absoulute path to the bash interpreter.if you do not specifiy and interpreter line,then defult  is #!/bin/sh. so yes you can write it like #!/bin/sh.
+
+3) Write a Shell Script which prints I will complete #90DaysOofDevOps challenge
+Ans => vi task.sh
+ #!/bin/bash
+echo "I will complete #90DaysOofDevOps challenge"
+
+4) Write a Shell Script to take user input, input from arguments and print the variables.
+Ans => vi task2.sh 
+#!/bin/bash
+echo "Enter user name"
+read username
+echo "The name you enter is" $username
+
+5) Write an Example of If else in Shell Scripting by comparing 2 numbers
+Ans =>  vi task3.sh 
+#/bin/bash
+echo "Please Enter two no"
+read a b
+if [ $a -gt $b ]
+then
+        echo "a is greater" $a
+else
+        echo "b is greater" $b
+fi
