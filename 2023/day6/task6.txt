@@ -1,0 +1,75 @@
+#90DaysOfDevOps
+
+
+1) Create a simple file and do ls -ltr to see the details of the files refer to Notes
+Ans => touch test1.txt
+ls -ltr
+total 4
+-rwxrw-r-- 1 ubuntu jenkins    0 Jan  6 16:29 f1.txt
+drwxrwxr-x 2 ubuntu ubuntu  4096 Jan  6 16:29 test
+-rw-rw-r-- 1 ubuntu ubuntu     0 Jan  6 16:41 test1.txt  ---see the user,groups and other permisiion here 
+
+After change permission of user,group and other to execute permission 
+chmod ugo+x test1.txt
+ls -ltr
+total 4
+-rwxrw-r-- 1 ubuntu jenkins    0 Jan  6 16:29 f1.txt
+drwxrwxr-x 2 ubuntu ubuntu  4096 Jan  6 16:29 test
+-rwxrwxr-x 1 ubuntu ubuntu     0 Jan  6 16:41 test1.txt -----see the user,groups and other permisiion here .
+
+Each of the three permissions are assigned to three defined categories of users. The categories are:
+owner   —   The owner of the file or  application.
+"chown" is used to change the ownership permission of a file or directory.
+group   —   The group that owns the file or application.
+"chgrp" is used to change the gropu permission of a file or directory.
+others  —   All users with access to the system. (outised the users are in a group)
+"chmod" is used to change the other users permissions of a file or directory.
+
+2) Write an article about File Permissions based on your understanding from the notes.
+Ans => permissions are r(read)= 4 w(write)= 2 x(execute) =1 .
+Highest permission 777.
+-but effective 666 incase of a file for security reason in linux, no user will get execute permission.
+-For directory case effective permission is 755.
+-Minimum permission – effective permission 644 incase of a file.
+
+3) Read about ACL and try out the commands getfacl and setfacl
+Ans => Access control list (ACL) provides an additional, more flexible permission mechanism for file systems. 
+It is designed to assist with UNIX file permissions. ACL allows you to give permissions for any user or group to any disc resource.
+setfacl and getfacl are used for setting up ACL and showing ACL respectively.
+
+Use of ACL :
+Think of a scenario in which a particular user is not a member of group created by you but still you want to give some read or write access, 
+how can you do it without making user a member of group, here comes in picture Access Control Lists, ACL helps us to do this trick.
+Basically, ACLs are used to make a flexible permission mechanism in Linux.
+
+
+ls -ltr
+total 0
+-rwsrw-r-- 1 ubuntu jenkins 0 Jan  6 16:29 f1.txt
+-rwxrwxr-x 1 ubuntu ubuntu  0 Jan  6 16:41 test1.txt
+-rw-rw-r-- 1 ubuntu ubuntu  0 Jan  6 17:00 test
+root@ip-172-31-39-240:/home/ubuntu# getfacl test
+# file: test
+# owner: ubuntu
+# group: ubuntu
+user::rw-
+group::rw-
+other::r--
+
+
+
+root@ip-172-31-39-240:/home/ubuntu# setfacl u:test:rwx test
+root@ip-172-31-39-240:/home/ubuntu# ls -ltr
+total 0
+-rwsrw-r--  1 ubuntu jenkins 0 Jan  6 16:29 f1.txt
+-rwxrwxr-x  1 ubuntu ubuntu  0 Jan  6 16:41 test1.txt
+-rw-rwxr--+ 1 ubuntu ubuntu  0 Jan  6 17:00 test
+root@ip-172-31-39-240:/home/ubuntu# getfacl test
+# file: test
+# owner: ubuntu
+# group: ubuntu
+user::rw-
+user:test:rwx
+group::rw-
+mask::rwx
+other::r--
