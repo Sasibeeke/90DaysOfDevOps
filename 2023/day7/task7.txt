@@ -21,11 +21,11 @@ Ans = 1) to install docker
      2) to install jenkins 
         # docker pull jenkins/jenkins
 
-Write a small blog or article to install these tools using package managers on Ubuntu and CentOS
+2) Write a small blog or article to install these tools using package managers on Ubuntu and CentOS
+Ans => check screenshot .
 
 
-
-systemctl and systemd
+* systemctl and systemd
 systemctl is used to examine and control the state of “systemd” system and service manager. 
 systemd is system and service manager for Unix like operating systems(most of the distributions, not all).
 
@@ -35,10 +35,10 @@ systemd is system and service manager for Unix like operating systems(most of th
 Ans # systemctl status docker
 
 2) stop the service jenkins and post before and after screenshots
-check screenshot for output. 
+Ans check screenshot for output. 
 
 
-read about the commands systemctl vs service
+* read about the commands systemctl vs service
 You can check Docker’s status with systemctl on distributions that use Systemd for service management. 
 This covers the majority of popular operating systems including Debian, Ubuntu, CentOS, and Red Hat.
 # sudo systemctl status docker
