@@ -1,0 +1,49 @@
+#90DaysOfDevOps
+
+1) What is Git and why is it important?
+Ans => git is version control system from which you can track all changes to files.
+it is important because we can do parllel working at a time and also file changes are unecessary then you can again restore to your previos version.
+git is distributed version control system so if anything happen in local repo then you can pull changes from remote repo.
+
+2) What is difference Between Main Branch and Master Branch?? 
+Ans => when you created git repository on local machine then Default  branch is master branch.
+       when youcreate git repository on remote then default branch is main branch . 
+
+3) Can you explain the difference between Git and GitHub?
+Ans => git is distributed version control system from which you can track all changes.git is comman line tool
+       github is platform where you can store you all files. GitHub is gui .
+
+4) How do you create a new repository on GitHub?
+Ans => In Repositories section "New" tab available ,click on it give repository name then select the reposity type public  or private
+then you can add readme.md file and then click on click repository.
+
+5) What is difference between local & remote repository? How to connect local to remote? 
+Ans => local repository means it is available on your machine . to access it does not required internet.
+Local repository default branch is master.
+Remote repository is is available on internet. you can access it anywhere from the world you just need internet.
+Remote repository default branch is main
+ 
+ to connect local to remote
+    # git remote add origin https://github.com/Sasibeeke/tprepo.git
+
+
+
+## Tasks
+task-1: 
+- Set your user name and email address, which will be associated with your commits.
+Ans => git.config --global user.name "Sasibeeke"
+       git.config --global user.email "sasiram124@gmail.com" 
+
+task-2: 
+- Create a repository named "Devops" on GitHub
+Ans => 
+- Connect your local repository to the repository on GitHub.
+Ans => git remote add origin https://github.com/Sasibeeke/Devops.git
+
+- Create a new file in Devops/Git/Day-02.txt & add some content to it
+Ans =>  # mkdir Git
+        # vi Day-02.txt 
+        # git add . && git commit -m "first commit"
+
+- Push your local commits to the repository on GitHub
+Ans => #git push -u origin master
