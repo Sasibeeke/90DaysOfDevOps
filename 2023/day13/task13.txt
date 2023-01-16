@@ -1,0 +1,59 @@
+Hello Dosto 😎
+
+Let's Start with Basics of Python as this is also important for Devops Engineer to build the logic and Programs.
+
+**What is Python?**
+
+- Python is a Open source, general purpose, high level, and object-oriented programming language.
+- It was created by **Guido van Rossum**
+- Python consists of vast libraries and various frameworks like Django,Tensorflow, Flask, Pandas, Keras etc.
+
+
+**How to Install Python?**
+
+You can install Python in your System whether it is window, MacOS, ubuntu, centos etc. Below are the links for the installation:
+- [Windows Installation](https://www.python.org/downloads/)
+- Ubuntu: apt-get install python3.6  
+
+
+
+Task1:
+1. Install Python in your respective OS, and check the version.
+Ans => In ubuntu to install 
+       # apt-get install python3.6 
+       to check version 
+       # python --version 
+For more please check screenshots.        
+2. Read about different Data Types in Python.
+Ans = > 
+1) Numeric 
+* Integers – This value is represented by int class. It contains positive or negative whole numbers (without fraction or decimal). In Python there is no limit to how long an integer value can be.
+* Float – This value is represented by float class. It is a real number with floating point representation. It is specified by a decimal point. Optionally, the character e or E followed by a positive or negative integer may be appended to specify scientific notation.
+* Complex Numbers – Complex number is represented by complex class. It is specified as (real part) + (imaginary part)j. For example – 2+3j
+
+2) sequence type 
+*  String
+In Python, Strings are arrays of bytes representing Unicode characters. A string is a collection of one or more characters put in a single quote, double-quote or triple quote. In python there is no character data type, a character is a string of length one. It is represented by str class.
+
+* List 
+Lists are just like the arrays, declared in other languages which is a ordered collection of data. It is very flexible as the items in a list do not need to be of the same type.
+
+* Tuple 
+Just like list, tuple is also an ordered collection of Python objects. The only difference between tuple and list is that tuples are immutable i.e. tuples cannot be modified after it is created. It is represented by tuple class.
+
+3) Boolean 
+Data type with one of the two built-in values, True or False. Boolean objects that are equal to True are truthy (true), and those equal to False are falsy (false). But non-Boolean objects can be evaluated in Boolean context as well and determined to be true or false. It is denoted by the class bool.
+
+4) set 
+In Python, Set is an unordered collection of data type that is iterable, mutable and has no duplicate elements. The order of elements in a set is undefined though it may consist of various elements.
+
+5) Dictonary 
+Dictionary in Python is an unordered collection of data values, used to store data values like a map, which unlike other Data Types that hold only single value as an element, Dictionary holds key:value pair. Key-value is provided in the dictionary to make it more optimized. Each key-value pair in a Dictionary is separated by a colon :, whereas each key is separated by a ‘comma’.
+
+
+You can get the complete Playlist [here](https://www.youtube.com/watch?v=abPgj_3hzVY&list=PLlfy9GnSVerS_L5z0COaF7rsbgWmJXTOM)🙌
+
+Don't forget to share your Journey over linkedin. Let the community know that you have started another chapter of your Journey.
+
+Happy Learning, Ruko Mat Phod do😃
+  
